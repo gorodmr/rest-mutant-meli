@@ -38,12 +38,8 @@ public class QuasarOperationController {
 			@ApiResponse(responseCode = "200", description = "Mensaje y localización de la nave",
 					content = { @Content(mediaType = "application/json",
 							schema = @Schema(implementation = QuasarOperationResponse.class)) }),
-		    @ApiResponse(responseCode = "404", description = "No fue posible calcular la posición, faltan distancias",
-					content = { @Content(mediaType = "application/json",
-							schema = @Schema(implementation = UndeterminedLocationException.class)) }),
-			@ApiResponse(responseCode = "404", description = "No se puede determinar una de las palabras del mensaje",
-					content = { @Content(mediaType = "application/json",
-							schema = @Schema(implementation = UndeterminableMessageException.class)) })})
+		    @ApiResponse(responseCode = "404", description = "No fue posible calcular la posición, faltan distancias"),
+			@ApiResponse(responseCode = "404", description = "No se puede determinar una de las palabras del mensaje")})
 	@PostMapping
 	public ResponseEntity<QuasarOperationResponse> getTopsecret(@RequestBody @Valid QuasarOperationRequest quasarOperationRequest){
 		return ResponseEntity.ok(quasarOperationService.getQuasarOperation(quasarOperationRequest));
