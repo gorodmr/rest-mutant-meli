@@ -7,6 +7,7 @@ import co.com.mercado.libre.quasar.exception.QuasarOperationErrors;
 import co.com.mercado.libre.quasar.model.Satellite;
 import co.com.mercado.libre.quasar.model.SatelliteSplit;
 import co.com.mercado.libre.quasar.repository.SatelliteRepository;
+import lombok.Getter;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -59,6 +60,10 @@ public class QuasarOperationSplitServiceImpl extends QuasarOperationServiceImpl 
 		satellitesSplit.forEach(s -> {
 			s.setActive(Boolean.FALSE);
 		});
+	}
+
+	public static List<SatelliteSplit> getSatellitesSplit() {
+		return satellitesSplit;
 	}
 
 }

@@ -60,4 +60,11 @@ public class QuasarOperationServiceImplTest {
 		QuasarOperationResponse response = quasarOperationSplitService.getQuasarOperation(request);
 		Assert.assertEquals("este es un mensaje", response.getMessage());
 	}
+
+	@Test
+	public void disableSatellitesTst() {
+		quasarOperationSplitService.disableSatellitesSplitStatus();
+
+		Assert.assertFalse(quasarOperationSplitService.getSatellitesSplit().get(0).isActive());
+	}
 }
