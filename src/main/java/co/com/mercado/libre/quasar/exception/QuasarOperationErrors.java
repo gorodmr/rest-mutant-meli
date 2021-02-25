@@ -13,8 +13,7 @@ public enum QuasarOperationErrors {
 	UNDETERMINABLE_WORD("No se puede determinar una de las palabras del mensaje", HttpStatus.NOT_FOUND),
 	SATELLITE_NOT_FOUND("El satelite no existe", HttpStatus.NOT_FOUND),
 	DUPLICATE_SATELLITE_INFORMATION("Ya habian sido ingresados los datos de este satelite", HttpStatus.NOT_FOUND),
-	DISTANCE_NOT_FOUND("No fue posible calcular la posición, faltan distancias", HttpStatus.NOT_FOUND),
-	INCOMPLETE_INFORMATION("La información ingresada es insuficiente", HttpStatus.NOT_FOUND);
+	DISTANCE_NOT_FOUND("No fue posible calcular la posición, faltan distancias", HttpStatus.NOT_FOUND);
 
 	private String message;
 	private HttpStatus statusCode;

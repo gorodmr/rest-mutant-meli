@@ -7,7 +7,6 @@ import co.com.mercado.libre.quasar.exception.QuasarOperationErrors;
 import co.com.mercado.libre.quasar.model.Satellite;
 import co.com.mercado.libre.quasar.model.SatelliteSplit;
 import co.com.mercado.libre.quasar.repository.SatelliteRepository;
-import lombok.Getter;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
