@@ -30,4 +30,12 @@ para ejecutar se debe ingresar a la siguiente url
 * Lombok
 * Doker
 
+## Documentación ##
+
+La documentación del programa se puede encontrar en base_path\rest-mutant-meli\documentation
+En esta carpeta encontramos los siguientes archivos:
+- Documento de evidencias de pruebas realizadas en postman
+- Documento con las especificaciones y recursos utilizados para el desarrollo, asi como los reportes de coverage
+- Colección de postman para realizar las pruebas del programa
+
 

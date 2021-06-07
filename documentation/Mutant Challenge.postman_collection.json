@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "e75c0706-884f-4040-a22a-4fd6c3be0dfc",
+		"name": "Mutant Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Detectar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\r\n   \"satellitesInformation\": [ \r\n\r\n      { \r\n\r\n         \"name\": \"kenobi\", \r\n\r\n         \"distance\": 100, \r\n\r\n         \"message\": [\"este\", \"\", \"\", \"mensaje\", \"\"] \r\n\r\n      }, \r\n\r\n      { \r\n\r\n         \"name\": \"skywalker\", \r\n\r\n         \"distance\": 115.5, \r\n\r\n         \"message\": [\"\", \"es\", \"\", \"\", \"secreto\"] \r\n\r\n      }, \r\n\r\n      { \r\n\r\n         \"name\": \"sato\", \r\n\r\n         \"distance\": 142.7, \r\n\r\n         \"message\": [\"este\", \"\", \"un\", \"\", \"\"] \r\n\r\n      } \r\n\r\n   ] \r\n\r\n} \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://operacionfuegodequasarml-env.eba-v3f35xun.us-east-2.elasticbeanstalk.com/topsecret",
+					"protocol": "http",
+					"host": [
+						"operacionfuegodequasarml-env",
+						"eba-v3f35xun",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"topsecret"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Statistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://operacionfuegodequasarml-env.eba-v3f35xun.us-east-2.elasticbeanstalk.com/topsecret_split",
+					"protocol": "http",
+					"host": [
+						"operacionfuegodequasarml-env",
+						"eba-v3f35xun",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"topsecret_split"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
