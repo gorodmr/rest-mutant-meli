@@ -8,10 +8,9 @@
 		<version>2.3.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mercadolibre</groupId>
-	<artifactId>rest-quasar-operation</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>rest-quasar-operation</name>
+	<groupId>com.meli</groupId>
+	<artifactId>rest-mutant-meli</artifactId>
+	<version>0.0.1</version>
 	<description>Project for mercadolibre challenge</description>
 
 	<properties>
@@ -21,6 +20,10 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
@@ -43,16 +46,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
 			<version>1.18.12</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.2.32</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springdoc</groupId>
@@ -61,14 +55,14 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.8.6</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>com.lemmingapex.trilateration</groupId>
-			<artifactId>trilateration</artifactId>
-			<version>1.0.2</version>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver</artifactId>
+			<version>3.12.7</version>
 		</dependency>
 	</dependencies>
 
@@ -109,6 +103,8 @@
 										<exclude>*Application</exclude>
 										<exclude>*.exception.**</exclude>
 										<exclude>*.model.*</exclude>
+										<exclude>*.util.*</exclude>
+										<exclude>*.domain.*</exclude>
 									</excludes>
 									<limits>
 										<limit>
@@ -144,6 +140,11 @@
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-milestone</id>
+			<name>Spring Maven MILESTONE Repository</name>
+			<url>http://repo.spring.io/libs-milestone</url>
 		</repository>
 	</repositories>
 

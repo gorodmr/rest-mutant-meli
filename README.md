@@ -1,28 +1,13 @@
-# README #
+# Examen Mercadolibre
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Prueba para mercadolibre por Diego Muñoz, en la que se da solución a la petición de magneto para identificar 
+si un humano es mutante o no
 
-### What is this repository for? ###
+* Version 0.0.1
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Frameworks requeridos ###
 
-### How do I get set up? ###
+* Java 8
+* Maven
+* Redis
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Who do I talk to? ###
-
-* dmunoz
-* jrherrera
-  csolarz-ml
-  msolas
-  andrescuvertino
-  ezfernandez
-  federicocravero
