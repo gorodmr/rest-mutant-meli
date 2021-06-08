@@ -1,17 +1,23 @@
-version: '2'
+version: "3.8"
+
+networks:
+  backend:
+    external: false
+    name: backend
 services:
   mongodb:
-    container_name: mutant-datastore
-    image: mongo:3.2
-    command: mongod --smallfiles
-  web:
-    container_name: mutant-service
-    image: mutant-service-image
-    depends_on: # mutant-datastore will be started before the mutant-service
-      - mongodb
+    networks:
+      - backend
+    image: mongo:latest
+    container_name: mutant
     ports:
-      - "8080:8080"
+      - 27017:27017
+  mutant-app-image:
+    networks:
+      - backend
+    image: mutant-app-image
+    container_name: mutant-app-image
+    ports:
+      - 8080:8080
     links:
       - mongodb
-    environment:
-      SPRING_DATA_MONGODB_URI: mongodb://mongodb/mutant
