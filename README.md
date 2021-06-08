@@ -38,4 +38,10 @@ En esta carpeta encontramos los siguientes archivos:
 - Documento con las especificaciones y recursos utilizados para el desarrollo, asi como los reportes de coverage
 - Colección de postman para realizar las pruebas del programa
 
+#### Mejoras ####
+
+* Para dar cumplimiento al requerimiento que permita realizar mas de 1 millon de peticiones por segundo se sugiere 
+la configuración de un grupo de auto scalling para administrar las instancias segun demanda
+
+
 

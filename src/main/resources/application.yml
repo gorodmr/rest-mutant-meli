@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://ec2-user:admin@ec2-52-15-79-3.us-east-2.compute.amazonaws.com/mutant
+
+

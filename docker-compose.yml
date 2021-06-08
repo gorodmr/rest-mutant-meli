@@ -6,7 +6,6 @@ services:
     command: mongod --smallfiles
   web:
     container_name: mutant-service
-    build: build/libs
     image: mutant-service-image
     depends_on: # mutant-datastore will be started before the mutant-service
       - mongodb
