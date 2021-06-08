@@ -18,8 +18,8 @@ contaremos con la documentación concerniente a los servicios expuestos en la AP
 
 El jar se encuentra desplegado en una instancia de EC2 con AWS Elastic Beanstalk
 para ejecutar se debe ingresar a la siguiente url
-- http://detectormutantesmeli10-env.eba-jdufpgne.us-east-2.elasticbeanstalk.com/
-- url swagger http://detectormutantesmeli10-env.eba-jdufpgne.us-east-2.elasticbeanstalk.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config
+- http://retomutantes.us-east-2.elasticbeanstalk.com/
+- url swagger http://retomutantes.us-east-2.elasticbeanstalk.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config
 
 ### Frameworks Utilizados ###
 
