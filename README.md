@@ -19,7 +19,7 @@ contaremos con la documentación concerniente a los servicios expuestos en la AP
 El jar se encuentra desplegado en una instancia de EC2 con AWS Elastic Beanstalk
 para ejecutar se debe ingresar a la siguiente url
 - 
-- url swagger 
+- url swagger http://mutantdetector-env.eba-4ttmnqhk.us-east-2.elasticbeanstalk.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config
 
 ### Frameworks Utilizados ###
 
@@ -29,6 +29,15 @@ para ejecutar se debe ingresar a la siguiente url
 * AWS Elastic Beanstalk
 * Lombok
 * Doker
+
+## Diseño ##
+
+Se hizo uso del patrón observer para implementar la búsqueda de secuencias de forma asíncrona 
+y se agregaron eventos a cada buscador(vertical, horizontal, diagonal up y diagonal down) de tal forma que se origine
+un evento cada que se encuentre una secuencia. Estos eventos son recibidos por el observador quien lleva un conteo del
+numero de secuencias encontradas. Una vez se complete un mínimo de dos secuencias se eliminan los procesos de búsqueda
+y se retorna el resultado (esto para cuando es un mutante), si no se completan las dos secuencias espera a terminar 
+procesos de búsqueda y retorna falso para indicar que no es mutante. Esta implementación reduce tiempo en las búsquedas
 
 ## Documentación ##
 
